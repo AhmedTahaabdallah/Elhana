@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ElhanaDatasetEmpAttaend" targetNamespace="http://tempuri.org/ElhanaDatasetEmpAttaend.xsd" xmlns:mstns="http://tempuri.org/ElhanaDatasetEmpAttaend.xsd" xmlns="http://tempuri.org/ElhanaDatasetEmpAttaend.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ElhanaDatasetEmpAttaend" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ElhanaDatasetEmpAttaend" msprop:Generator_UserDSName="ElhanaDatasetEmpAttaend">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Employyes_Presence" msprop:Generator_TableClassName="Employyes_PresenceDataTable" msprop:Generator_TableVarName="tableEmployyes_Presence" msprop:Generator_TablePropName="Employyes_Presence" msprop:Generator_RowDeletingName="Employyes_PresenceRowDeleting" msprop:Generator_RowChangingName="Employyes_PresenceRowChanging" msprop:Generator_RowEvHandlerName="Employyes_PresenceRowChangeEventHandler" msprop:Generator_RowDeletedName="Employyes_PresenceRowDeleted" msprop:Generator_UserTableName="Employyes_Presence" msprop:Generator_RowChangedName="Employyes_PresenceRowChanged" msprop:Generator_RowEvArgName="Employyes_PresenceRowChangeEvent" msprop:Generator_RowClassName="Employyes_PresenceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpP_Id" msprop:Generator_ColumnVarNameInTable="columnEmpP_Id" msprop:Generator_ColumnPropNameInRow="EmpP_Id" msprop:Generator_ColumnPropNameInTable="EmpP_IdColumn" msprop:Generator_UserColumnName="EmpP_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Date" msprop:Generator_ColumnVarNameInTable="columnEmp_Date" msprop:Generator_ColumnPropNameInRow="Emp_Date" msprop:Generator_ColumnPropNameInTable="Emp_DateColumn" msprop:Generator_UserColumnName="Emp_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Total" msprop:Generator_ColumnVarNameInTable="columnEmp_Total" msprop:Generator_ColumnPropNameInRow="Emp_Total" msprop:Generator_ColumnPropNameInTable="Emp_TotalColumn" msprop:Generator_UserColumnName="Emp_Total" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Punash" msprop:Generator_ColumnVarNameInTable="columnEmp_Punash" msprop:Generator_ColumnPropNameInRow="Emp_Punash" msprop:Generator_ColumnPropNameInTable="Emp_PunashColumn" msprop:Generator_UserColumnName="Emp_Punash" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Ancestor" msprop:Generator_ColumnVarNameInTable="columnEmp_Ancestor" msprop:Generator_ColumnPropNameInRow="Emp_Ancestor" msprop:Generator_ColumnPropNameInTable="Emp_AncestorColumn" msprop:Generator_UserColumnName="Emp_Ancestor" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Additional" msprop:Generator_ColumnVarNameInTable="columnEmp_Additional" msprop:Generator_ColumnPropNameInRow="Emp_Additional" msprop:Generator_ColumnPropNameInTable="Emp_AdditionalColumn" msprop:Generator_UserColumnName="Emp_Additional" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Note" msprop:Generator_ColumnVarNameInTable="columnEmp_Note" msprop:Generator_ColumnPropNameInRow="Emp_Note" msprop:Generator_ColumnPropNameInTable="Emp_NoteColumn" msprop:Generator_UserColumnName="Emp_Note" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

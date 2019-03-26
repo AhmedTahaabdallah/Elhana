@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cust_finalreview_stor" targetNamespace="http://tempuri.org/cust_finalreview_stor.xsd" xmlns:mstns="http://tempuri.org/cust_finalreview_stor.xsd" xmlns="http://tempuri.org/cust_finalreview_stor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cust_finalreview_stor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="cust_finalreview_stor" msprop:Generator_UserDSName="cust_finalreview_stor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="stor" msprop:Generator_TableClassName="storDataTable" msprop:Generator_TableVarName="tablestor" msprop:Generator_TablePropName="stor" msprop:Generator_RowDeletingName="storRowDeleting" msprop:Generator_RowChangingName="storRowChanging" msprop:Generator_RowEvHandlerName="storRowChangeEventHandler" msprop:Generator_RowDeletedName="storRowDeleted" msprop:Generator_UserTableName="stor" msprop:Generator_RowChangedName="storRowChanged" msprop:Generator_RowEvArgName="storRowChangeEvent" msprop:Generator_RowClassName="storRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="storid" msprop:Generator_ColumnVarNameInTable="columnstorid" msprop:Generator_ColumnPropNameInRow="storid" msprop:Generator_ColumnPropNameInTable="storidColumn" msprop:Generator_UserColumnName="storid" type="xs:string" minOccurs="0" />
+              <xs:element name="storfatoriid" msprop:Generator_ColumnVarNameInTable="columnstorfatoriid" msprop:Generator_ColumnPropNameInRow="storfatoriid" msprop:Generator_ColumnPropNameInTable="storfatoriidColumn" msprop:Generator_UserColumnName="storfatoriid" type="xs:string" minOccurs="0" />
+              <xs:element name="stortype" msprop:Generator_ColumnVarNameInTable="columnstortype" msprop:Generator_ColumnPropNameInRow="stortype" msprop:Generator_ColumnPropNameInTable="stortypeColumn" msprop:Generator_UserColumnName="stortype" type="xs:string" minOccurs="0" />
+              <xs:element name="storitemname" msprop:Generator_ColumnVarNameInTable="columnstoritemname" msprop:Generator_ColumnPropNameInRow="storitemname" msprop:Generator_ColumnPropNameInTable="storitemnameColumn" msprop:Generator_UserColumnName="storitemname" type="xs:string" minOccurs="0" />
+              <xs:element name="stordate" msprop:Generator_ColumnVarNameInTable="columnstordate" msprop:Generator_ColumnPropNameInRow="stordate" msprop:Generator_ColumnPropNameInTable="stordateColumn" msprop:Generator_UserColumnName="stordate" type="xs:string" minOccurs="0" />
+              <xs:element name="storquantity" msprop:Generator_ColumnVarNameInTable="columnstorquantity" msprop:Generator_ColumnPropNameInRow="storquantity" msprop:Generator_ColumnPropNameInTable="storquantityColumn" msprop:Generator_UserColumnName="storquantity" type="xs:string" minOccurs="0" />
+              <xs:element name="storprice" msprop:Generator_ColumnVarNameInTable="columnstorprice" msprop:Generator_ColumnPropNameInRow="storprice" msprop:Generator_ColumnPropNameInTable="storpriceColumn" msprop:Generator_UserColumnName="storprice" type="xs:string" minOccurs="0" />
+              <xs:element name="stortotalprice" msprop:Generator_ColumnVarNameInTable="columnstortotalprice" msprop:Generator_ColumnPropNameInRow="stortotalprice" msprop:Generator_ColumnPropNameInTable="stortotalpriceColumn" msprop:Generator_UserColumnName="stortotalprice" type="xs:string" minOccurs="0" />
+              <xs:element name="storpay" msprop:Generator_ColumnVarNameInTable="columnstorpay" msprop:Generator_ColumnPropNameInRow="storpay" msprop:Generator_ColumnPropNameInTable="storpayColumn" msprop:Generator_UserColumnName="storpay" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

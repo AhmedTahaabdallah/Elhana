@@ -1,0 +1,18 @@
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\bin\Debug\makebackup.exe
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\bin\Debug\makebackup.pdb
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\bin\Debug\makebackup.xml
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\obj\x86\Debug\makebackup.Form1.resources
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\obj\x86\Debug\makebackup.Resources.resources
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\obj\x86\Debug\makebackup.vbproj.GenerateResource.Cache
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\obj\x86\Debug\makebackup.exe
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\obj\x86\Debug\makebackup.xml
+C:\Users\AhmedTaha\AppData\Local\Temporary Projects\makebackup\obj\x86\Debug\makebackup.pdb
+F:\Data Base\New folder\makebackup\makebackup\obj\x86\Debug\makebackup.exe
+F:\Data Base\New folder\makebackup\makebackup\obj\x86\Debug\makebackup.xml
+F:\Data Base\New folder\makebackup\makebackup\obj\x86\Debug\makebackup.pdb
+F:\Data Base\New folder\makebackup\makebackup\bin\Debug\makebackup.exe
+F:\Data Base\New folder\makebackup\makebackup\bin\Debug\makebackup.pdb
+F:\Data Base\New folder\makebackup\makebackup\bin\Debug\makebackup.xml
+F:\Data Base\New folder\makebackup\makebackup\obj\x86\Debug\makebackup.Form1.resources
+F:\Data Base\New folder\makebackup\makebackup\obj\x86\Debug\makebackup.Resources.resources
+F:\Data Base\New folder\makebackup\makebackup\obj\x86\Debug\makebackup.vbproj.GenerateResource.Cache

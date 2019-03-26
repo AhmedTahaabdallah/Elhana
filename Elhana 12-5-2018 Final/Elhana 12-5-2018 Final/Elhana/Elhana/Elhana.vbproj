@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD1AEBE5-85DC-4430-9487-9B79AEECB4BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Elhana.My.MyApplication</StartupObject>
+    <RootNamespace>Elhana</RootNamespace>
+    <AssemblyName>Elhana</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Elhana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Elhana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="customers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cust_finalreview_money.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cust_finalreview_money.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cust_finalreview_stor.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cust_finalreview_stor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Imp_Exp_Money.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Imp_Exp_Money.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_StoreCust.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_StoreCust.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_StoreVend.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_StoreVend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_StoreVend.vb">
+      <DependentUpon>DataSet_StoreVend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ElhanaDatasetEmpAttaend.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ElhanaDatasetEmpAttaend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ElhanaDatasetEmpAttaend.vb">
+      <DependentUpon>ElhanaDatasetEmpAttaend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Export_Money.Designer.vb">
+      <DependentUpon>Export_Money.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Export_Money.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final_MonthDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Final_MonthDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_addmonth.Designer.vb">
+      <DependentUpon>frm_addmonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_addmonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_backup.Designer.vb">
+      <DependentUpon>frm_backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustFetora.Designer.vb">
+      <DependentUpon>frm_CustFetora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustFetora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Customers.Designer.vb">
+      <DependentUpon>Frm_Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Customers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_custreview.Designer.vb">
+      <DependentUpon>frm_custreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_custreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Emp.Designer.vb">
+      <DependentUpon>Frm_Emp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EmpAttand.Designer.vb">
+      <DependentUpon>Frm_EmpAttand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EmpAttand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Items.Designer.vb">
+      <DependentUpon>Frm_Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.vb">
+      <DependentUpon>Frm_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Money_Blance.Designer.vb">
+      <DependentUpon>Frm_Money_Blance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Money_Blance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MonthesClosed.Designer.vb">
+      <DependentUpon>frm_MonthesClosed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MonthesClosed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MonthesClosedLogin.Designer.vb">
+      <DependentUpon>frm_MonthesClosedLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MonthesClosedLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_EmpAttand.Designer.vb">
+      <DependentUpon>Frm_rpt_EmpAttand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_EmpAttand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rpt_FinalMonth.Designer.vb">
+      <DependentUpon>Frm_Rpt_FinalMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Rpt_FinalMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_showcustomers.Designer.vb">
+      <DependentUpon>frm_rpt_showcustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_showcustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_showcustomers_reviewmoney.Designer.vb">
+      <DependentUpon>frm_rpt_showcustomers_reviewmoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_showcustomers_reviewmoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_showcustomers_reviewstor.Designer.vb">
+      <DependentUpon>frm_rpt_showcustomers_reviewstor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_showcustomers_reviewstor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_All.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_Customer.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_date.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_fatora.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_fatora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_fatora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_fatora_save.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_fatora_save.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_fatora_save.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_month.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_month_Customer.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowCust_month_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowCust_month_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_All.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowExp_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_Date.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowExp_Date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_Date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_month.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowExp_month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_reason.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowExp_reason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_reason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_reason_Month.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowExp_reason_Month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_reason_Month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_vend.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowExp_vend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowExp_vend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_showfetora.Designer.vb">
+      <DependentUpon>frm_rpt_showfetora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_showfetora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_All.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowImp_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_cust.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowImp_cust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_cust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_Date.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowImp_Date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_Date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_month.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowImp_month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_reason.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowImp_reason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_reason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_reason_Month.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowImp_reason_Month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowImp_reason_Month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_showstorquintiy.Designer.vb">
+      <DependentUpon>frm_rpt_showstorquintiy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_showstorquintiy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_showvendors.Designer.vb">
+      <DependentUpon>frm_rpt_showvendors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_showvendors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_All.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowVend_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_date.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowVend_date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_fatora.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowVend_fatora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_fatora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_month.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowVend_month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_month_Vendor.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowVend_month_Vendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_month_Vendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_Vendor.Designer.vb">
+      <DependentUpon>Frm_rpt_ShowVend_Vendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_rpt_ShowVend_Vendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_showallfetora.Designer.vb">
+      <DependentUpon>frm_showallfetora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_showallfetora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ShowAllUser.Designer.vb">
+      <DependentUpon>frm_ShowAllUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ShowAllUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowCust.Designer.vb">
+      <DependentUpon>Frm_ShowCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowEmp.Designer.vb">
+      <DependentUpon>Frm_ShowEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowEmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowEmpAttand.Designer.vb">
+      <DependentUpon>Frm_ShowEmpAttand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowEmpAttand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowImportsMoney.Designer.vb">
+      <DependentUpon>Frm_ShowImportsMoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowImportsMoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowItems.Designer.vb">
+      <DependentUpon>Frm_ShowItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Showmonthsclosed.Designer.vb">
+      <DependentUpon>frm_Showmonthsclosed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Showmonthsclosed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowStoreCust.Designer.vb">
+      <DependentUpon>Frm_ShowStoreCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowStoreCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowStoreVend.Designer.vb">
+      <DependentUpon>Frm_ShowStoreVend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowStoreVend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowVend.Designer.vb">
+      <DependentUpon>Frm_ShowVend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowVend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Store.Designer.vb">
+      <DependentUpon>Frm_Store.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Store.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_StoreCust.Designer.vb">
+      <DependentUpon>Frm_StoreCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_StoreCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_StoreCust_Cdid.Designer.vb">
+      <DependentUpon>frm_StoreCust_Cdid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_StoreCust_Cdid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_StoreVend.Designer.vb">
+      <DependentUpon>Frm_StoreVend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_StoreVend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_StoreVend_Cdid.Designer.vb">
+      <DependentUpon>frm_StoreVend_Cdid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_StoreVend_Cdid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_UpdateCount_Month.Designer.vb">
+      <DependentUpon>Frm_UpdateCount_Month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_UpdateCount_Month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Users.Designer.vb">
+      <DependentUpon>Frm_Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Vendors.Designer.vb">
+      <DependentUpon>Frm_Vendors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Vendors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imports_Money.Designer.vb">
+      <DependentUpon>Imports_Money.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imports_Money.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MElhana.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rpt_EmpAttand.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_EmpAttand.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Final_Month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Final_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_Showcustomers.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Showcustomers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_Showcustomers_reviewmoney.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Showcustomers_reviewmoney.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_Showcustomers_reviewstor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Showcustomers_reviewstor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_All.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_All.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_Customer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_Customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_date.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_date.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_fatora.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_fatora.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_fatora_save.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_fatora_save.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowCust_month_Customer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowCust_month_Customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowExp_All.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowExp_All.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowExp_Date.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowExp_Date.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowExp_month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowExp_month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowExp_reason.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowExp_reason.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowExp_reason_Month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowExp_reason_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowExp_vend.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowExp_vend.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowImp_All.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowImp_All.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowImp_cust.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowImp_cust.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowImp_Date.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowImp_Date.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowImp_month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowImp_month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowImp_reason.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowImp_reason.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowImp_reason_Month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowImp_reason_Month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_Showstorquintiy.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Showstorquintiy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_Showvendors.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Showvendors.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowVend_All.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowVend_All.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowVend_date.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowVend_date.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowVend_fatora.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowVend_fatora.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowVend_month.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowVend_month.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowVend_month_Vendor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowVend_month_Vendor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_ShowVend_Vendor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_ShowVend_Vendor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_Show_fetora.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Show_fetora.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Show_ExportsMoney.Designer.vb">
+      <DependentUpon>Show_ExportsMoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Show_ExportsMoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store_Quentity.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_Quentity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vendors.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vendors.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Export_Money.resx">
+      <DependentUpon>Export_Money.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_addmonth.resx">
+      <DependentUpon>frm_addmonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_backup.resx">
+      <DependentUpon>frm_backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustFetora.resx">
+      <DependentUpon>frm_CustFetora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Customers.resx">
+      <DependentUpon>Frm_Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_custreview.resx">
+      <DependentUpon>frm_custreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Emp.resx">
+      <DependentUpon>Frm_Emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EmpAttand.resx">
+      <DependentUpon>Frm_EmpAttand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Items.resx">
+      <DependentUpon>Frm_Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Money_Blance.resx">
+      <DependentUpon>Frm_Money_Blance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MonthesClosed.resx">
+      <DependentUpon>frm_MonthesClosed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MonthesClosedLogin.resx">
+      <DependentUpon>frm_MonthesClosedLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_EmpAttand.resx">
+      <DependentUpon>Frm_rpt_EmpAttand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rpt_FinalMonth.resx">
+      <DependentUpon>Frm_Rpt_FinalMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_showcustomers.resx">
+      <DependentUpon>frm_rpt_showcustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_showcustomers_reviewmoney.resx">
+      <DependentUpon>frm_rpt_showcustomers_reviewmoney.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_showcustomers_reviewstor.resx">
+      <DependentUpon>frm_rpt_showcustomers_reviewstor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_All.resx">
+      <DependentUpon>Frm_rpt_ShowCust_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_Customer.resx">
+      <DependentUpon>Frm_rpt_ShowCust_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_date.resx">
+      <DependentUpon>Frm_rpt_ShowCust_date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_fatora.resx">
+      <DependentUpon>Frm_rpt_ShowCust_fatora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_fatora_save.resx">
+      <DependentUpon>Frm_rpt_ShowCust_fatora_save.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_month.resx">
+      <DependentUpon>Frm_rpt_ShowCust_month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowCust_month_Customer.resx">
+      <DependentUpon>Frm_rpt_ShowCust_month_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowExp_All.resx">
+      <DependentUpon>Frm_rpt_ShowExp_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowExp_Date.resx">
+      <DependentUpon>Frm_rpt_ShowExp_Date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowExp_month.resx">
+      <DependentUpon>Frm_rpt_ShowExp_month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowExp_reason.resx">
+      <DependentUpon>Frm_rpt_ShowExp_reason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowExp_reason_Month.resx">
+      <DependentUpon>Frm_rpt_ShowExp_reason_Month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowExp_vend.resx">
+      <DependentUpon>Frm_rpt_ShowExp_vend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_showfetora.resx">
+      <DependentUpon>frm_rpt_showfetora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowImp_All.resx">
+      <DependentUpon>Frm_rpt_ShowImp_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowImp_cust.resx">
+      <DependentUpon>Frm_rpt_ShowImp_cust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowImp_Date.resx">
+      <DependentUpon>Frm_rpt_ShowImp_Date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowImp_month.resx">
+      <DependentUpon>Frm_rpt_ShowImp_month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowImp_reason.resx">
+      <DependentUpon>Frm_rpt_ShowImp_reason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowImp_reason_Month.resx">
+      <DependentUpon>Frm_rpt_ShowImp_reason_Month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_showstorquintiy.resx">
+      <DependentUpon>frm_rpt_showstorquintiy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_showvendors.resx">
+      <DependentUpon>frm_rpt_showvendors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowVend_All.resx">
+      <DependentUpon>Frm_rpt_ShowVend_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowVend_date.resx">
+      <DependentUpon>Frm_rpt_ShowVend_date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowVend_fatora.resx">
+      <DependentUpon>Frm_rpt_ShowVend_fatora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowVend_month.resx">
+      <DependentUpon>Frm_rpt_ShowVend_month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowVend_month_Vendor.resx">
+      <DependentUpon>Frm_rpt_ShowVend_month_Vendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_rpt_ShowVend_Vendor.resx">
+      <DependentUpon>Frm_rpt_ShowVend_Vendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_showallfetora.resx">
+      <DependentUpon>frm_showallfetora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ShowAllUser.resx">
+      <DependentUpon>frm_ShowAllUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowCust.resx">
+      <DependentUpon>Frm_ShowCust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowEmp.resx">
+      <DependentUpon>Frm_ShowEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowEmpAttand.resx">
+      <DependentUpon>Frm_ShowEmpAttand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowImportsMoney.resx">
+      <DependentUpon>Frm_ShowImportsMoney.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowItems.resx">
+      <DependentUpon>Frm_ShowItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Showmonthsclosed.resx">
+      <DependentUpon>frm_Showmonthsclosed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowStoreCust.resx">
+      <DependentUpon>Frm_ShowStoreCust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowStoreVend.resx">
+      <DependentUpon>Frm_ShowStoreVend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShowVend.resx">
+      <DependentUpon>Frm_ShowVend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Store.resx">
+      <DependentUpon>Frm_Store.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_StoreCust.resx">
+      <DependentUpon>Frm_StoreCust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_StoreCust_Cdid.resx">
+      <DependentUpon>frm_StoreCust_Cdid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_StoreVend.resx">
+      <DependentUpon>Frm_StoreVend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_StoreVend_Cdid.resx">
+      <DependentUpon>frm_StoreVend_Cdid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_UpdateCount_Month.resx">
+      <DependentUpon>Frm_UpdateCount_Month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Users.resx">
+      <DependentUpon>Frm_Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Vendors.resx">
+      <DependentUpon>Frm_Vendors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imports_Money.resx">
+      <DependentUpon>Imports_Money.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_EmpAttand.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_EmpAttand.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Final_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Final_Month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Showcustomers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Showcustomers.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Showcustomers_reviewmoney.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Showcustomers_reviewmoney.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Showcustomers_reviewstor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Showcustomers_reviewstor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_All.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_All.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_Customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_Customer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_date.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_date.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_fatora.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_fatora.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_fatora_save.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_fatora_save.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowCust_month_Customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowCust_month_Customer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowExp_All.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowExp_All.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowExp_Date.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowExp_Date.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowExp_month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowExp_month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowExp_reason.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowExp_reason.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowExp_reason_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowExp_reason_Month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowExp_vend.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowExp_vend.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowImp_All.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowImp_All.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowImp_cust.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowImp_cust.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowImp_Date.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowImp_Date.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowImp_month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowImp_month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowImp_reason.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowImp_reason.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowImp_reason_Month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowImp_reason_Month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Showstorquintiy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Showstorquintiy.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Showvendors.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Showvendors.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowVend_All.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowVend_All.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowVend_date.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowVend_date.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowVend_fatora.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowVend_fatora.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowVend_month.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowVend_month.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowVend_month_Vendor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowVend_month_Vendor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_ShowVend_Vendor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_ShowVend_Vendor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Show_fetora.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Show_fetora.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_ExportsMoney.resx">
+      <DependentUpon>Show_ExportsMoney.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="customers.xsc">
+      <DependentUpon>customers.xsd</DependentUpon>
+    </None>
+    <None Include="customers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>customers.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="customers.xss">
+      <DependentUpon>customers.xsd</DependentUpon>
+    </None>
+    <None Include="cust_finalreview_money.xsc">
+      <DependentUpon>cust_finalreview_money.xsd</DependentUpon>
+    </None>
+    <None Include="cust_finalreview_money.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cust_finalreview_money.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="cust_finalreview_money.xss">
+      <DependentUpon>cust_finalreview_money.xsd</DependentUpon>
+    </None>
+    <None Include="cust_finalreview_stor.xsc">
+      <DependentUpon>cust_finalreview_stor.xsd</DependentUpon>
+    </None>
+    <None Include="cust_finalreview_stor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cust_finalreview_stor.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="cust_finalreview_stor.xss">
+      <DependentUpon>cust_finalreview_stor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Imp_Exp_Money.xsc">
+      <DependentUpon>DataSet_Imp_Exp_Money.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Imp_Exp_Money.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Imp_Exp_Money.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet_Imp_Exp_Money.xss">
+      <DependentUpon>DataSet_Imp_Exp_Money.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_StoreCust.xsc">
+      <DependentUpon>DataSet_StoreCust.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_StoreCust.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_StoreCust.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet_StoreCust.xss">
+      <DependentUpon>DataSet_StoreCust.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_StoreVend.xsc">
+      <DependentUpon>DataSet_StoreVend.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_StoreVend.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_StoreVend.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet_StoreVend.xss">
+      <DependentUpon>DataSet_StoreVend.xsd</DependentUpon>
+    </None>
+    <None Include="ElhanaDatasetEmpAttaend.xsc">
+      <DependentUpon>ElhanaDatasetEmpAttaend.xsd</DependentUpon>
+    </None>
+    <None Include="ElhanaDatasetEmpAttaend.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ElhanaDatasetEmpAttaend.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ElhanaDatasetEmpAttaend.xss">
+      <DependentUpon>ElhanaDatasetEmpAttaend.xsd</DependentUpon>
+    </None>
+    <None Include="Final_MonthDataSet.xsc">
+      <DependentUpon>Final_MonthDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Final_MonthDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Final_MonthDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Final_MonthDataSet.xss">
+      <DependentUpon>Final_MonthDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Store_Quentity.xsc">
+      <DependentUpon>Store_Quentity.xsd</DependentUpon>
+    </None>
+    <None Include="Store_Quentity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_Quentity.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Store_Quentity.xss">
+      <DependentUpon>Store_Quentity.xsd</DependentUpon>
+    </None>
+    <None Include="vendors.xsc">
+      <DependentUpon>vendors.xsd</DependentUpon>
+    </None>
+    <None Include="vendors.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vendors.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="vendors.xss">
+      <DependentUpon>vendors.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

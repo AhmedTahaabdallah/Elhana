@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vendors" targetNamespace="http://tempuri.org/vendors.xsd" xmlns:mstns="http://tempuri.org/vendors.xsd" xmlns="http://tempuri.org/vendors.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="vendors" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="vendors" msprop:Generator_UserDSName="vendors">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vendors" msprop:Generator_TableClassName="vendorsDataTable" msprop:Generator_TableVarName="tablevendors" msprop:Generator_TablePropName="_vendors" msprop:Generator_RowDeletingName="vendorsRowDeleting" msprop:Generator_RowChangingName="vendorsRowChanging" msprop:Generator_RowEvHandlerName="vendorsRowChangeEventHandler" msprop:Generator_RowDeletedName="vendorsRowDeleted" msprop:Generator_UserTableName="vendors" msprop:Generator_RowChangedName="vendorsRowChanged" msprop:Generator_RowEvArgName="vendorsRowChangeEvent" msprop:Generator_RowClassName="vendorsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vendname" msprop:Generator_ColumnVarNameInTable="columnvendname" msprop:Generator_ColumnPropNameInRow="vendname" msprop:Generator_ColumnPropNameInTable="vendnameColumn" msprop:Generator_UserColumnName="vendname" type="xs:string" minOccurs="0" />
+              <xs:element name="vendtype" msprop:Generator_ColumnVarNameInTable="columnvendtype" msprop:Generator_ColumnPropNameInRow="vendtype" msprop:Generator_ColumnPropNameInTable="vendtypeColumn" msprop:Generator_UserColumnName="vendtype" type="xs:string" minOccurs="0" />
+              <xs:element name="vendblance" msprop:Generator_ColumnVarNameInTable="columnvendblance" msprop:Generator_ColumnPropNameInRow="vendblance" msprop:Generator_ColumnPropNameInTable="vendblanceColumn" msprop:Generator_UserColumnName="vendblance" type="xs:string" minOccurs="0" />
+              <xs:element name="vendnote" msprop:Generator_ColumnVarNameInTable="columnvendnote" msprop:Generator_ColumnPropNameInRow="vendnote" msprop:Generator_ColumnPropNameInTable="vendnoteColumn" msprop:Generator_UserColumnName="vendnote" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

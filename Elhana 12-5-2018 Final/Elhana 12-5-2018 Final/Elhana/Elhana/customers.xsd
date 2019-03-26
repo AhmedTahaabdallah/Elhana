@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="customers" targetNamespace="http://tempuri.org/customers.xsd" xmlns:mstns="http://tempuri.org/customers.xsd" xmlns="http://tempuri.org/customers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="customers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="customers" msprop:Generator_UserDSName="customers">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="customers" msprop:Generator_TableClassName="customersDataTable" msprop:Generator_TableVarName="tablecustomers" msprop:Generator_TablePropName="_customers" msprop:Generator_RowDeletingName="customersRowDeleting" msprop:Generator_RowChangingName="customersRowChanging" msprop:Generator_RowEvHandlerName="customersRowChangeEventHandler" msprop:Generator_RowDeletedName="customersRowDeleted" msprop:Generator_UserTableName="customers" msprop:Generator_RowChangedName="customersRowChanged" msprop:Generator_RowEvArgName="customersRowChangeEvent" msprop:Generator_RowClassName="customersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="custname" msprop:Generator_ColumnVarNameInTable="columncustname" msprop:Generator_ColumnPropNameInRow="custname" msprop:Generator_ColumnPropNameInTable="custnameColumn" msprop:Generator_UserColumnName="custname" type="xs:string" minOccurs="0" />
+              <xs:element name="custtype" msprop:Generator_ColumnVarNameInTable="columncusttype" msprop:Generator_ColumnPropNameInRow="custtype" msprop:Generator_ColumnPropNameInTable="custtypeColumn" msprop:Generator_UserColumnName="custtype" type="xs:string" minOccurs="0" />
+              <xs:element name="custblance" msprop:Generator_ColumnVarNameInTable="columncustblance" msprop:Generator_ColumnPropNameInRow="custblance" msprop:Generator_ColumnPropNameInTable="custblanceColumn" msprop:Generator_UserColumnName="custblance" type="xs:string" minOccurs="0" />
+              <xs:element name="custnotes" msprop:Generator_ColumnVarNameInTable="columncustnotes" msprop:Generator_ColumnPropNameInRow="custnotes" msprop:Generator_ColumnPropNameInTable="custnotesColumn" msprop:Generator_UserColumnName="custnotes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
